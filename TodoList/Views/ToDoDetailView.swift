@@ -18,13 +18,24 @@ struct ToDoDetailView: View {
             Text(" ")
             Text(todo.descriptoin)
             Text(" ")
-            HStack{
+            Button {
+                // TODO
+            } label: {
                 ZStack{
                     todo.completed ? Image(systemName: "checkmark.circle.fill") : Image(systemName: "x.circle.fill")
                 }
                 .foregroundColor(todo.completed ? .green : .red)
                 Text(todo.completed ? "completed" : "imcompleted")
+                    .foregroundColor(.white)
             }
+            
+//            HStack{
+//                ZStack{
+//                    todo.completed ? Image(systemName: "checkmark.circle.fill") : Image(systemName: "x.circle.fill")
+//                }
+//                .foregroundColor(todo.completed ? .green : .red)
+//                Text(todo.completed ? "completed" : "imcompleted")
+//            }
         }
         
     }

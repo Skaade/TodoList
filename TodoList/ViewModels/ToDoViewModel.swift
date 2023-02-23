@@ -39,6 +39,7 @@ class ToDoViewModel: ObservableObject {
         }
     }
     
+    
     public func getImcompleteToDos() -> [ToDo]{
         var todoscopy = [ToDo]()
         for td in todos{
